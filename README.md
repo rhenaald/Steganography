@@ -1,4 +1,4 @@
-# 🎧 EchoHide - Audio Steganography using FFT
+# 🎧 EchoHide - Audio Steganography dengan FFT
 
 **EchoHide** adalah aplikasi berbasis web yang memungkinkan Anda menyembunyikan dan mengekstrak pesan teks dari/ke file audio `.wav` menggunakan teknik steganografi berbasis **Fast Fourier Transform (FFT)**. Aplikasi ini dibangun dengan **Streamlit**, dan cocok untuk eksperimen atau proyek edukasi terkait audio processing dan keamanan data.
 
