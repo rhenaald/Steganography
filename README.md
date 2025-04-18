@@ -66,29 +66,11 @@ streamlit run app.py
 
 ---
 
-## 📦 Contoh Isi `requirements.txt`
-
-```txt
-streamlit
-numpy
-scipy
-matplotlib
-```
-
----
-
 ## ⚠️ Batasan & Catatan
 
-- Ini bukan metode steganografi yang aman secara kriptografis.
 - Tidak disarankan untuk menyembunyikan informasi sensitif.
 - Disarankan hanya untuk eksperimen dan edukasi.
 - Kompatibel dengan file `.wav` saja.
-
----
-
-## 📜 Lisensi
-
-Proyek ini dilisensikan di bawah MIT License. Bebas digunakan dan dimodifikasi untuk keperluan edukasi dan pengembangan.
 
 ---
 
@@ -97,8 +79,3 @@ Proyek ini dilisensikan di bawah MIT License. Bebas digunakan dan dimodifikasi u
 Pull request terbuka! Jika kamu punya ide peningkatan fitur atau perbaikan bug, langsung saja fork dan kembangkan. Jangan lupa ⭐ repo ini kalau kamu suka ya!
 
 ---
-
-## 👨‍💻 Dibuat Dengan ❤️ Oleh
-
-**[Nama Kamu atau Tim]**  
-Untuk tugas, riset, atau eksperimen edukatif di bidang pemrosesan sinyal digital dan steganografi.
