@@ -18,7 +18,7 @@
 ### 1. 📥 Clone Repositori
 
 ```bash
-git clone https://github.com/kamu/echohide.git
+git clone https://github.com/rhenaald/Steganography.git
 cd echohide
 ```
 
