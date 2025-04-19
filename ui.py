@@ -67,31 +67,31 @@ def show_developer():
             "name": "Aida Nurfadilah",
             "role": "237006076",
             "desc": "Pengerjaan Laporan & PPT",
-            "img": "image/237006076.jpg"
+            "img": "Image/237006076.jpg"
         },
         {
             "name": "Rosi Saraswati Alrasid",
             "role": "237006087",
             "desc": "Pengerjaan Laporan & PPT",
-            "img": "image/237006087.jpg"
+            "img": "Image/237006087.jpg"
         },
         {
             "name": "Muhammad Rafli Fajar Batubara",
             "role": "237006094",
             "desc": "membuat poster (promosi aplikasi)",
-            "img": "image/237006094.jpg"
+            "img": "Image/237006094.jpg"
         },
         {
             "name": "Ikhwan Kurniawan Julianto",
             "role": "237006102",
             "desc": "pembuatan aplikasi",
-            "img": "image/237006102.jpg"
+            "img": "Image/237006102.jpg"
         },
         {
             "name": "Luthfi Putra Pratama",
             "role": "237006119",
             "desc": "menjelaskan hasil",
-            "img": "image/237006119.jpg"
+            "img": "Image/237006119.jpg"
         }
     ]
 
