@@ -1,4 +1,3 @@
-# ui.py
 import streamlit as st
 from scipy.io import wavfile
 from utils import embed_message_in_audio, extract_message_from_audio, get_audio_download_bytes
@@ -6,7 +5,7 @@ from visualization import plot_audio_waveform, plot_audio_spectrum
 
 def run_app():
 
-    st.sidebar.title("Navigasi")
+    st.sidebar.title("Menu")
     menu = st.sidebar.selectbox("Pilih Menu", ["Home", "Steganography", "About", "Developer"])
 
     if menu == "Home":
@@ -66,19 +65,19 @@ def show_developer():
         {
             "name": "Aida Nurfadilah",
             "role": "237006076",
-            "desc": "Pengerjaan Laporan & PPT",
+            "desc": "Pembuatan Laporan",
             "img": "Image/237006076.jpg"
         },
         {
             "name": "Rosi Saraswati Alrasid",
             "role": "237006087",
-            "desc": "Pengerjaan Laporan & PPT",
+            "desc": "Pembuatan Laporan & Poster",
             "img": "Image/237006087.jpg"
         },
         {
             "name": "Muhammad Rafli Fajar Batubara",
             "role": "237006094",
-            "desc": "membuat poster (promosi aplikasi)",
+            "desc": "Pebuatan PPT)",
             "img": "Image/237006094.jpg"
         },
         {
@@ -123,7 +122,7 @@ def run_hide_tab(alpha):
 
             message = st.text_area("Masukkan pesan untuk disembunyikan:", height=100)
 
-            if st.button("🔐 Sembunyikan Pesan") and message:
+            if st.button("Sembunyikan Pesan") and message:
                 max_chars = len(audio_mono) // 800
                 if len(message) > max_chars:
                     st.error(f"Pesan terlalu panjang! Maksimum {max_chars} karakter.")
@@ -136,7 +135,7 @@ def run_hide_tab(alpha):
                             st.pyplot(plot_audio_waveform(stego_mono, sample_rate, "Audio dengan Pesan"))
                             st.pyplot(plot_audio_spectrum(stego_mono, sample_rate, "Spektrum dengan Pesan"))
                             st.audio(get_audio_download_bytes(stego_audio, sample_rate), format="audio/wav")
-                            st.download_button("⬇️ Unduh Audio dengan Pesan", 
+                            st.download_button("⬇Unduh Audio dengan Pesan", 
                             data=get_audio_download_bytes(stego_audio, sample_rate),
                             file_name="stego_audio.wav", mime="audio/wav")
 
@@ -162,7 +161,7 @@ def run_extract_tab(alpha):
                 st.write("Audio Asli:")
                 st.audio(original_file, format="audio/wav")
 
-                if st.button("🔍 Ekstrak Pesan"):
+                if st.button("Ekstrak Pesan"):
                     with st.spinner('Mengekstrak pesan...'):
                         message = extract_message_from_audio(stego_audio, original_audio, alpha)
                         if message:
