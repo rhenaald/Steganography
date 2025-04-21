@@ -135,7 +135,7 @@ def run_hide_tab(alpha):
                             st.pyplot(plot_audio_waveform(stego_mono, sample_rate, "Audio dengan Pesan"))
                             st.pyplot(plot_audio_spectrum(stego_mono, sample_rate, "Spektrum dengan Pesan"))
                             st.audio(get_audio_download_bytes(stego_audio, sample_rate), format="audio/wav")
-                            st.download_button("⬇Unduh Audio dengan Pesan", 
+                            st.download_button("Unduh Audio dengan Pesan", 
                             data=get_audio_download_bytes(stego_audio, sample_rate),
                             file_name="stego_audio.wav", mime="audio/wav")
 
